@@ -1,0 +1,224 @@
+/* a css comment  
+
+ COLOR PALETTE -- goto     www.color.abobe.com palette inspiration
+ #45472E - Darkest Green
+ #A1AA5D - mid Green
+ #EAD674 - Ocher yellow
+ #F7F5C1 - lighter Ocher
+ #D0CD98 - light blue green
+
+ */
+*{
+	margin: 0;
+}
+body {
+	background-color: #483d37;/*each element can have its own background color*/
+	color:#483d37; /*each element can change the font color inside it */
+	margin: 0 auto;
+	width: 900px;
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+header{
+	padding: 1.5em;	
+}
+
+header h1{
+	font-size: 4.2em;
+	padding: .5em .5em .5em .2em;
+}
+header{
+	background-color:rgba(183,81,27, 0.3);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c888c+0,ff7126+100&1+0,0.4+58,0.24+100 */
+background: -moz-linear-gradient(45deg,  rgba(124,136,140,1) 0%, rgba(200,123,81,0.4) 58%, rgba(255,113,38,0.24) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(124,136,140,1) 0%,rgba(200,123,81,0.4) 58%,rgba(255,113,38,0.24) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(124,136,140,1) 0%,rgba(200,123,81,0.4) 58%,rgba(255,113,38,0.24) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c888c', endColorstr='#3dff7126',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+	
+	color: rgba(255,113,38, 0.8);	
+	color: rgba(226,247,255, 0.6);
+}
+
+/**********************************************   link styles *****************/
+a{/*set default base styles for links */
+	color: #CDE0E7;
+	text-decoration: none;
+	/*padding: 15px;*/
+	/*background: pink;*/
+}
+/*  only target the nav for hover styles  */
+nav a:hover{
+	background-color: #e2f7ff;
+	padding: 1em 1.2em 1.2em 1.2em;
+	color:#45472E;
+
+}
+nav a{
+	padding: 1em 1.2em 1.2em 1.2em;
+}
+
+nav{
+	background-color: rgba(255,113,38, 0.5);	
+}
+
+nav ul{
+	list-style: none;
+	padding: 1em;
+	text-align: center;
+
+}
+nav li{
+	display: inline-block; 
+}
+
+/* set multiple elements at the same time...... **/
+h2, h3, h4, p, table, img{
+	padding: 1em 1.2em 0 2em;
+	margin:0;
+}
+
+#mainContent h3, {
+	padding: 1em 2em 1em 2em;
+}
+#mainContent p{
+	padding: 1em 2em .3em 2em;
+	line-height: 1em;
+}
+
+#mainContent li{
+	padding: .1em;	
+}
+#mainContent li:nth-child(2n){
+	background: rgba(139, 146, 139, 0.1)
+}
+
+#mainContent{
+	background-color: #e2f7ff;
+	font-size: 1em;
+}
+
+footer{
+	background-color: #2F4D69;
+	color:#CDE0E7;
+
+}
+
+
+/*********************************************   FORMS STYLING **********/
+form {
+	background-color:#CDE0E7;
+	border-radius: 1em;
+	margin: 1em 1.2em 1.2em 1.2em;
+	width: 96%;
+}
+/**  get rid of the bullet list graphic ***/
+
+form ul{
+  list-style-type: none;  
+}
+
+/**  give the fieldset some styles (the fieldset set multiple form sections apart) ***/
+
+fieldset{
+	margin-top: 1em;
+	border: none;
+	line-height: 1.6em;	
+	background-color: rgba(139, 146, 139, .01);
+}
+
+/**  the legend is a label for each fieldset ***/
+legend{
+	font-style: italic;
+	color: #7f472e;
+	background-color:#d6dcd6;
+	padding: 2px 5px;
+	border-radius: 5px;
+	border-top: 1px;
+	border-top-color: #d6dcd6;
+}
+
+/**  we use the CSS3 attribute filter to selectivly style certain input elements ***/
+input[type="text"],
+input[type="number"],
+input[type="email"], 
+input[type="select"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea,
+input[type="checkbox"]{
+	width: 10em;	
+	border: 1px solid #abb0ab;
+	padding: .3em;
+    margin: 0 .8em;
+	outline: none;
+}
+textarea{
+	width: 20em;
+	height: 8em;
+}
+
+select{
+    padding: 2px;
+    margin: 0 10px;
+}
+/***   FORM EVENT STYLING **** */
+input[type="text"]:focus, 
+input[type="text"]:hover, 
+input[type="number"]:focus, 
+input[type="number"]:hover, 
+input[type="date"]:focus, 
+input[type="date"]:hover, 
+input[type="tel"]:focus, 
+input[type="tel"]:hover, 
+input[type="password"]:focus, 
+input[type="password"]:hover{
+background-color: lightcyan;
+border: 1px solid #669900;
+		
+}
+/* use the attribute filter to style the submit button uniquely   */
+input[type="submit"]{
+	border: 1px solid #d96849;
+	background-color: #466c8c;
+	color: #f5f6d4;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px 10px;
+    margin: 0 0 0 0px;
+	cursor: pointer;	
+	/*float: left; clear: left;*/
+}
+
+input[type="submit"]:hover{
+
+	background-color: #7CA0BD;
+	
+}
+
+label{
+	float: left;
+	width: 260px;
+	clear: left;
+    text-align: right;
+	
+}
+
+.checkboxes{
+	/*float: right;*/
+}
+
+.error{
+    color: red;   
+}
+
+
+
+
+
+
+
+
