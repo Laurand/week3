@@ -74,6 +74,18 @@ nav li{
 	display: inline-block; 
 }
 
+/**********************Starts here homework added by Laurand........................*************/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+li {
+  float: left;
+  font-family: serif;
+  text-align: center;
+}
+/**********************Homework ends here by Laurand.......................*************/
+
 /* set multiple elements at the same time...... **/
 h2, h3, h4, p, table, img{
 	padding: 1em 1.2em 0 2em;
@@ -90,9 +102,6 @@ h2, h3, h4, p, table, img{
 
 #mainContent li{
 	padding: .1em;	
-}
-#mainContent li:nth-child(2n){
-	background: rgba(139, 146, 139, 0.1)
 }
 
 #mainContent{
